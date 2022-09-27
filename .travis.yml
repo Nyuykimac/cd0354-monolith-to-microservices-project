@@ -12,7 +12,7 @@ script:
   - docker build -f udagram-api-feed/Dockerfile -t  markngoran/udagram-api-feed:latest udagram-api-feed
   - docker build -f udagram-api-user/Dockerfile -t  markngoran/udagram-api-user:latest udagram-api-user
   - docker build -f udagram-frontend/Dockerfile -t  markngoran/udagram-frontend:latest udagram-frontend
-  - docker build -f udagram-reverseproxy/Dockerfile -t markngoran/reverseproxy:latest reverseproxy
+  - docker build -f udagram-reverseproxy/Dockerfile -t markngoran/reverseproxy:latest udagram-reverseproxy
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
