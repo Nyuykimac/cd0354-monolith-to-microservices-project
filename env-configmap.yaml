@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  POSTGRES_DB: postgres
+  AWS_BUCKET: arn:aws:s3:::coderefactor-dev
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  JWT_SECRET: testing
+  URL: 10.100.44.52:8100
+  POSTGRES_USERNAME: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_HOST: database-1.cty5f7jte9e4.us-east-1.rds.amazonaws.com
